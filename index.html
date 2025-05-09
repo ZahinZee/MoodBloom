@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mood Bloom</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌿 Mood Bloom</h1>
+    <form action="MoodServlet" method="post">
+      <label for="mood">How do you feel?</label>
+      <select name="mood" id="mood" required>
+        <option value="">-- Select Mood --</option>
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="anxious">Anxious</option>
+        <option value="tired">Tired</option>
+      </select>
+
+      <label for="weather">What's the weather like?</label>
+      <select name="weather" id="weather" required>
+        <option value="">-- Select Weather --</option>
+        <option value="sunny">Sunny</option>
+        <option value="rainy">Rainy</option>
+        <option value="cloudy">Cloudy</option>
+        <option value="windy">Windy</option>
+      </select>
+
+      <button type="submit">Find My Lo-Fi</button>
+    </form>
+  </div>
+</body>
+</html>
